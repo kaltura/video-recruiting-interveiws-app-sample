@@ -1,0 +1,70 @@
+.container {
+	margin-top: 50px;
+	max-width: 700px;
+}
+
+#search {
+	display: none;
+}
+
+ul{
+	padding: 0; 
+	margin: 0 auto;
+}
+#entries{
+	list-style-type:none;
+}
+
+#entry{
+	border: 1px solid black;	
+	padding: 10px;
+}
+
+#thumbnail{
+	float: left;
+}
+
+img {
+	max-width: 80%;
+	max-height: 80%;
+}
+
+#details{
+	margin-left: 200px;
+}
+
+/* The (background) */
+.lightbox {
+	margin-top: 50px;	
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: black;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.kWidgetIframeContainer {
+	margin: 0 auto;
+}

@@ -1,0 +1,62 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="metadata">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element id="md_CA85C4AD-4E51-94AF-C7D8-F0A82EFF33F8" name="ApplicantFullName" minOccurs="0" maxOccurs="1" type="textType">
+          <xsd:annotation>
+            <xsd:documentation/>
+            <xsd:appinfo>
+              <label>ApplicantFullName</label>
+              <key>ApplicantFullName</key>
+              <searchable>true</searchable>
+              <timeControl>false</timeControl>
+              <description/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element id="md_E4967BBE-9E32-CFD9-9F50-F0A850606284" name="ApplicantEmail" minOccurs="0" maxOccurs="1" type="textType">
+          <xsd:annotation>
+            <xsd:documentation/>
+            <xsd:appinfo>
+              <label>Applicant Email</label>
+              <key>ApplicantEmail</key>
+              <searchable>true</searchable>
+              <timeControl>false</timeControl>
+              <description/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element id="md_4D413923-3BCC-0C26-8556-F0A8818327CB" name="ApplicantLinkedInProfileLink" minOccurs="0" maxOccurs="1" type="textType">
+          <xsd:annotation>
+            <xsd:documentation/>
+            <xsd:appinfo>
+              <label>ApplicantLinkedInProfileLink</label>
+              <key>ApplicantLinkedInProfileLink</key>
+              <searchable>true</searchable>
+              <timeControl>false</timeControl>
+              <description/>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:complexType name="textType">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:string"/>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="dateType">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:long"/>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="objectType">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:string"/>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:simpleType name="listType">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+</xsd:schema>
