@@ -1,6 +1,6 @@
 # Save time and awkward interactions with applicant video interviews 
 
-As a hiring manager or recruiter, your inbox is constantly full of resumes, and only 2% of these applicants will really be relevant [source](https://www.glassdoor.com/employers/popular-topics/hr-stats.htm). Hours spent reviewing text or LinkedIn profiles, followed by hours of meeting the wrong candidates... It's frustrating, unproductive, and eats at a lot of your time. 
+As a hiring manager or recruiter, your inbox is constantly full of resumes, and only 2% of these applicants will really be relevant [according to glassdoor](https://www.glassdoor.com/employers/popular-topics/hr-stats.htm). Hours spent reviewing text or LinkedIn profiles, followed by hours of meeting the wrong candidates... It's frustrating, unproductive, and eats at a lot of your time. 
 Consider being on an urgent hiring spree for a new project. After tediously looking thrugh hundreds of CVs, you find this one guy, Ryan. You're sure he's your winner. You call; he passes the technical call with flying colors, and you schedule an interview. 
 But chatting with Ryan is worse than watching paint dry. This guy cannot be your second in command. There go four days of your precious time, and sadly, it's back to the drawing board. 
 
