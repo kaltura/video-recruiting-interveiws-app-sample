@@ -7,7 +7,7 @@ function login($email, $password)
   $config = new KalturaConfiguration();
   $client = new KalturaClient($config);
 
-  $partnerId = 0;
+  $partnerId;
   $expiry = 86400;
   $privileges = "disableentitlement";
   $otp = "";
