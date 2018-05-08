@@ -9,7 +9,7 @@ require_once('../config.inc');
  * Then, add entry to playlist 
  */ 
 
-function uploadMetadata($ks, $entryId, $data) 
+function uploadMetadata($ks, $entryId, $fullName, $email, $linkedin) 
 {
   $config = new KalturaConfiguration();
   $config->serviceUrl = SERVICE_URL;
@@ -27,7 +27,11 @@ function uploadMetadata($ks, $entryId, $data)
 
   $objectType = KalturaMetadataObjectType::ENTRY; 
 
-  $metadata = rawurldecode($data); 
+  $metadata = sprintf(METADATA_TEMPLATE,$fullName,$email, $linkedin);
+
+  // echo "logging ". $metadata; 
+
+  // $metadata = rawurldecode($data); 
 
   try {
     $result = $client->metadata->add($profileId, $objectType, $entryId, $metadata);
@@ -57,12 +61,12 @@ function createNewProfile($client){
   try {
     $result = $client->metadataProfile->add($metadataProfile, $xsd, $viewsData);
   } catch (Exception $e) {
-    echo $e->getMessage(); 
+    echo "create: ". $e->getMessage(); 
   }
   return $result->id;
 }
 
-$mandatory_params=array('ks','entryId');
+$mandatory_params=array('ks','entryId', 'fullName', 'email', 'linkedin');
 foreach ($mandatory_params as $param){
   if (!isset($_POST[$param])){
    die("$param is mandatory");
@@ -70,5 +74,5 @@ foreach ($mandatory_params as $param){
  $$param = strip_tags($_POST[$param]);
 }
 
-uploadMetadata($ks, $entryId, $_POST['metadata']);
+uploadMetadata($ks, $entryId, $fullName, $email, $linkedin);
 ?>

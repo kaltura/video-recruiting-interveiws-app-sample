@@ -262,10 +262,9 @@ async function uploadVideo() {
  */ 
 
   function addMetadata(entryId) {
-    var metadata = encodeURIComponent('<?xml version = "1.0" encoding="utf-8" standalone="yes"?><metadata><ApplicantFullName>'+fullName+'</ApplicantFullName><ApplicantEmail>'+email+'</ApplicantEmail><ApplicantLinkedInProfileLink>'+linkedin+'</ApplicantLinkedInProfileLink></metadata>');
     $.getJSON({
     url: 'metadata.php',
-    data: {"metadata": metadata, "ks": kalturaSession, "entryId": entryId}, 
+    data: {"ks": kalturaSession, "entryId": entryId, "fullName": fullName, "email": email, "linkedin": linkedin}, 
     type: 'POST',
     success : function( response ) {
         console.log("metadataId: "+response['profileId']);
