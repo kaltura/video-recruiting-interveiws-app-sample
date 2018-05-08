@@ -211,7 +211,7 @@ async function uploadVideo() {
   var blob = new Blob(recordedBlobs, {type: 'video/webm'});
   var endpoint = 'https://www.kaltura.com' + '/api_v3/';
   var fileType = 'video'; // or "audio"
-  var entryName = email+'-'+(currentQuestion);
+  var entryName = 'Question '+ (currentQuestion);
   var fileName = entryName + '.webm'; // or "wav"
   var formData = new FormData();
   var objectType = "1" /* KalturaMetadataObjectType.ENTRY */;
