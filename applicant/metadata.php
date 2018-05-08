@@ -29,10 +29,6 @@ function uploadMetadata($ks, $entryId, $fullName, $email, $linkedin)
 
   $metadata = sprintf(METADATA_TEMPLATE,$fullName,$email, $linkedin);
 
-  // echo "logging ". $metadata; 
-
-  // $metadata = rawurldecode($data); 
-
   try {
     $result = $client->metadata->add($profileId, $objectType, $entryId, $metadata);
   } catch (Exception $e) {
@@ -61,7 +57,7 @@ function createNewProfile($client){
   try {
     $result = $client->metadataProfile->add($metadataProfile, $xsd, $viewsData);
   } catch (Exception $e) {
-    echo "create: ". $e->getMessage(); 
+    echo $e->getMessage(); 
   }
   return $result->id;
 }
