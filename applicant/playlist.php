@@ -1,7 +1,7 @@
 <?php
 
 require_once('../config.inc');
-require_once('../adminKs.php');
+require_once('../adminKS.php');
 
 
 /*
