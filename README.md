@@ -3,7 +3,7 @@ This is a sample application that uses WebRTC Record to create an interview flow
 # To get started you'll need: 
 - A Kaltura VPaaS Account [(Register here)](https://vpaas.kaltura.com/register).
 - Your Kaltura account ID (aka partnerID) and API Admin Secret, which can be found in the KMC under Settings > Integration Settings.
-- The Kaltura PHP 5 Library which can be found [here](http://cdnbakmi.kaltura.com/content/clientlibs/php5_20-03-2018.tar.gz)
+- The Kaltura PHP 5 Library which can be found [here](https://github.com/kaltura/KalturaGeneratedAPIClientsPHP/releases)
 
 
 ### This application is split into two: The applicant app and the recruiter app. 
