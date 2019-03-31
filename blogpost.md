@@ -2,7 +2,7 @@
 
 As a hiring manager or recruiter, your inbox is constantly full of resumes, and only 2% of these applicants will really be relevant [according to Glassdoor](https://www.glassdoor.com/employers/popular-topics/hr-stats.htm). Hours spent reviewing text or LinkedIn profiles, followed by hours of meeting the wrong candidates... It's frustrating, unproductive, and eats at a lot of your time. 
 
-Consider being on an urgent hiring spree for a new project. After tediously looking thrugh hundreds of CVs, you find this one guy, Ryan. You're sure he's your winner. You call; he passes the technical call with flying colors, and you schedule an interview. 
+Consider being on an urgent hiring spree for a new project. After tediously looking through hundreds of CVs, you find this one guy, Ryan. You're sure he's your winner. You call; he passes the technical call with flying colors, and you schedule an interview. 
 But chatting with Ryan is worse than watching paint dry. This guy cannot be your second in command. There go four days of your precious time, and sadly, it's back to the drawing board. 
 
 What if you could ensure company culture fit within minutes - before wasting hours of time on interviews - by watching recorded videos of your applicants answering questions? More important than the content of their answers is the general personality or *vibe*. Imagine sifting through candidates for sales roles by watching videos of their 60 second sales pitch. Or, alternatively, get to know with video how your applicants would react to certain situations by presenting them with [situational judgement tests](https://www.changeboard.com/article-details/16255/situational-judgement-tests-the-future-of-recruitment-in-a-digital-world/). 
@@ -36,7 +36,7 @@ We check if the applicant's playlist exists. If it doesn't, we create one titled
 
 ## Ready?
 
-When the interview questions are complete, and before we can show the playlist, we need to make sure that all entries are ready. Depending on the lenght of the videos, this can take a few minutes. We set an interval timer that checks the status of the entries every 10 seconds. When all entries are ready to be played, the playlist is embedded using the playlist ID that we mentioned earlier. We showed a spinner during the wait time, but you can play a cute cat video if you want. Your potential developers would like that. 
+When the interview questions are complete, and before we can show the playlist, we need to make sure that all entries are ready. Depending on the length of the videos, this can take a few minutes. We set an interval timer that checks the status of the entries every 10 seconds. When all entries are ready to be played, the playlist is embedded using the playlist ID that we mentioned earlier. We showed a spinner during the wait time, but you can play a cute cat video if you want. Your potential developers would like that. 
 
 ## Your turn to browse
 
@@ -45,7 +45,7 @@ But wait, there's a catch. How do we protect your candidates' embarrassing momen
 
 ## Confidentiality and privacy 
 
-Remember that `recruiterApplication` category we created? It isn't just about keeping your entries organized. With category entitelments, you allow only specific users to view the applicant playlists. This can be done via our API or in the KMC under category settings. 
+Remember that `recruiterApplication` category we created? It isn't just about keeping your entries organized. With category entitlements, you allow only specific users to view the applicant playlists. This can be done via our API or in the KMC under category settings. 
 Upon login to the application, we create a Kaltura Session for the user, which will only return search results if the user is a member of that category.  Now you can sleep soundly knowing that your recruiters - and your recruiters only - will be subject to all those minutes of sales pitch fun!
 
 ## So what else can you do? 
